@@ -2,10 +2,15 @@
   /*** Colors ***/
 
   /** Primary **/
-  --light-red: hsl(0, 100%, 67%);
-  --orangey-yellow: hsl(39, 100%, 56%);
-  --green-teal: hsl(166, 100%, 37%);
-  --cobalt-blue: hsl(234, 85%, 45%);
+  --light-red: hsl(0 100% 67%);
+  --orangey-yellow: hsl(39 100% 56%);
+  --green-teal: hsl(166 100% 37%);
+  --cobalt-blue: hsl(234 85% 45%);
+
+  --bg-light-red: hsl(0 100% 67% / 0.1);
+  --bg-orangey-yellow: hsl(39 100% 56% / 0.1);
+  --bg-green-teal: hsl(166 100% 37% / 0.1);
+  --bg-cobalt-blue: hsl(234 85% 45% / 0.1);
 
   /** Gradients **/
 
@@ -22,9 +27,6 @@
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
-
-  --font-size-p: 18px;
-  --font-size-h2: 20px;
 }
 
 /* Reset */
@@ -41,6 +43,38 @@
 
 .txt-white {
   color: var(--white);
+}
+
+.txt-light-red {
+  color: var(--light-red);
+}
+
+.txt-orangey-yellow {
+  color: var(--orangey-yellow);
+}
+
+.txt-green-teal {
+  color: var(--green-teal);
+}
+
+.txt-cobalt-blue {
+  color: var(--cobalt-blue);
+}
+
+.bg-reaction {
+  background-color: var(--bg-light-red);
+}
+
+.bg-memory {
+  background-color:  var(--bg-orangey-yellow);
+}
+
+.bg-verbal {
+  background-color: var(--bg-green-teal);
+}
+
+.bg-visual {
+  background-color: var(--bg-cobalt-blue);
 }
 
 main {
@@ -82,7 +116,7 @@ h2 {
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(var(--light-royal-blue), 75%, var(--light-slate-blue));
+  background: linear-gradient(var(--violet-blue), 60%, var(--persian-blue));
   border-radius: 50%;
   width: 12.5rem;
   height: 12.5rem;
@@ -90,7 +124,7 @@ h2 {
 
 .result-number {
   font-size: 4.5rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .result-section h3 {
@@ -103,5 +137,23 @@ h2 {
   display: flex;
   flex-flow: column wrap;
   background-color: var(--white);
+  max-width: 23rem;
+  padding: 3rem 2rem;
 }
 
+.summary-card {
+  display: flex;
+  flex-direction: row;
+  padding: 01rem;
+  border-radius: 0.75rem;
+  margin: 0.5rem 0;
+  justify-content: space-between;
+}
+
+.summary-card h3 {
+  font-weight: 600
+}
+
+.summary-number {
+  padding-left: 4rem;
+}

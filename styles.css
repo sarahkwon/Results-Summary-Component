@@ -150,23 +150,30 @@ h2 {
   flex-flow: column wrap;
   background-color: var(--white);
   width: 23rem;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   border-radius: 2rem;
 }
 
 .summary-card {
   display: flex;
   flex-direction: row;
-  padding: 01rem;
+  justify-content: space-between;
+  padding: 1rem;
   border-radius: 0.75rem;
   margin: 0.5rem 0;
-  justify-content: space-between;
+
   width: 100%;
-  text-align: left
+}
+
+.summary-card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .summary-card h3 {
   font-weight: 600;
+  padding-left: 10px;
 }
 
 .summary-card p {
@@ -175,9 +182,14 @@ h2 {
 }
 
 .summary-number {
-  padding-left: 4rem;
-  font-weight: 600;
+
+  font-weight: 700;
   padding-right: 0.25rem;
+}
+
+.summary-number-max {
+  color: rgb(0 0 0 / 50%);
+  font-weight: 700;
 }
 
 .continue-button {
